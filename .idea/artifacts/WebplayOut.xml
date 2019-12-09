@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="WebplayOut">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebplayOut</output-path>
+    <root id="root">
+      <element id="archive" name="Webplay.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Webplay" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="lib1" />
+        <element id="library" level="project" name="lib" />
+        <element id="library" level="project" name="Webplay" />
+      </element>
+      <element id="directory" name="resources">
+        <element id="file-copy" path="$PROJECT_DIR$/resources/application.js" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/atmosphere.js" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/authbasic.html" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/backbutton.svg" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/console.html" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/identifier.html" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/index.html" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/jquery-2.0.3.js" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/settings.json" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/style.css" />
+        <element id="file-copy" path="$PROJECT_DIR$/resources/tc.html" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/accounts.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/authbasic.json" />
+      <element id="file-copy" path="$PROJECT_DIR$/FarmedAccounts.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/signIn.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/signUp.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/storyfarm.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/TODO.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/transferCode.txt" />
+    </root>
+  </artifact>
+</component>

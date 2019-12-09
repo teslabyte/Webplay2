@@ -1,0 +1,1 @@
+{"eternal":true,"user_account":{"device":"HUAWEI","device_model":"HUAWEI G7-L01","os_version":"5.1.1","platform":"android","unique_id":"747c49fd-f158-475b-9860-0c72a48fb44d:ab7caa1bad180c16"}}

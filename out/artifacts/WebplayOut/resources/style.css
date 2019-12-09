@@ -1,0 +1,138 @@
+body {
+    background-color: #303030;
+}
+
+h1 ,h4 {
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.options ul,li {
+    list-style: none;
+    text-align: center;
+}
+
+.options li {
+    margin: 0 auto;
+    display: block;
+    background-color: #1d1d1e;
+    margin-bottom: 15px;
+    width: 180px;
+    line-height: 60px;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+}
+
+* {
+    font-family: 'Ubuntu',sans-serif;
+}
+
+p {
+    line-height: 18px;
+}
+
+#console{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1d1d1e;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 45%;
+    padding: 3px;
+    background: #ddd;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-size: 15px;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+
+#input {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 400px;
+}
+
+#status {
+    width: 130px;
+    display: block;
+    margin-top: 3px;
+    margin: 0 auto;
+}
+
+#tcinput, #authinput ,#identinput{
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin: 0 auto;
+}
+
+#usertc, #userid, #auth, #ident{
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 45px;
+    width: 200px;
+}
+
+#auth ,#ident{
+    width: 350px;
+}
+
+#tcbuttondiv, #authbuttondiv, #identbuttondiv{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#tcbutton, #authbutton, #identbutton{
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    color: black;
+}
+
+#tcbutton:hover, #authbutton:hover, #identbutton:hover {
+    cursor: pointer;
+}
+
+#tcprompt, #authprompt ,#identprompt{
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    background-color: #1d1d1e;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+#serverselectdiv ,#osselectdiv{
+    display: inline;
+    text-align: center;
+}
+
+
+
+#backbutton img {
+    width: 10%;
+    height: 10%;
+    display: inline;
+    float: left;
+}
+
+#backbutton img:hover {
+    cursor: pointer;
+}

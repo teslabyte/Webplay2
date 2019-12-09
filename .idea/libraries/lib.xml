@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/httpclient-cache-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/fluent-hc-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/commons-lang3-3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/bcprov-jdk15on-158.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/jackson-databind-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/httpclient-win-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/jna-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/nettosphere-assembly-3.0.11-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/json-20170516.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/commons-net-3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/jackson-core-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/httpmime-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Webplay/lib/jna-platform-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

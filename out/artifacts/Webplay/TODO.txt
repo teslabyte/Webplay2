@@ -1,0 +1,7 @@
+-Change how it stores all info.Make one .json file.Load it at the start
+-Add security measures - passwords,ids,aes
+-Finish all 3 remaining pages
+-Test for multithreading
+-Make an logger = log every possible bit of info
+-Improve code readibility
+-Test subscription stuff

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Transfer Code</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <!-- Atmosphere -->
+        <script type="text/javascript" src="atmosphere.js"></script>
+        <!-- Application -->
+        <script type="text/javascript" src="jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="application.js"></script>
+    </head>
+
+    <body>
+        <div id="backbutton">
+            <a href="index.html">
+                <img src="backbutton.svg" alt="BROKE">
+            </a>
+        </div>
+        <div id="tcprompt">
+            <br><h4 id="tctext">Please enter your transfer code:</h4>
+            <div id="tcinput">
+                <input type="text" id="userid" autofocus="autofocus"/><br>
+                <input type="text" id="usertc" autofocus="autofocus"/>
+            </div>
+            <div id="serverselectdiv">
+                <select id="serverselect">
+                    <option value="0">Global</option>
+                    <option value="1">Japan</option>
+                </select>
+            </div>
+
+            <div id="osselectdiv">
+                <select id="osselect">
+                    <option value="0">Android</option>
+                    <option value="1">IOS</option>
+                </select>
+            </div>
+
+            <div id="tcbuttondiv">
+                <button id="tcbutton">Start farming</button>
+            </div>
+        </div>
+    </body>
+
+
+</html>
