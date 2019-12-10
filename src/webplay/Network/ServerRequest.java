@@ -1,17 +1,23 @@
 package webplay.Network;
 
+import webplay.ResponseClasses.ClientInfo;
+import webplay.Security.CustomLogger;
+import webplay.Security.Identification;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ServerRequest {
-    private BaseRequest baseRequest = new BaseRequest();
+    public BaseRequest baseRequest = new BaseRequest();
     private ServerResponseHandler serverResponseHandler = new ServerResponseHandler();
     private ServerRequestBodyHandler serverRequestBodyHandler = new ServerRequestBodyHandler();
+    private Identification identification = new Identification();
+    public ClientInfo clientInfo = new ClientInfo();
 
     public String Request(String request, String requestType) throws Exception{
-        //long startTime = System.currentTimeMillis();
+
         if(request.equals("/auth/sign_in")){
             baseRequest.requestVersion = 3;
         }
@@ -26,24 +32,27 @@ public class ServerRequest {
         baseRequest.getBaseHeaders(conn);
 
         addHeaders(conn,request,requestType);
+
         if(requestType.equals("GET"))conn.connect();
         if(requestType.equals("POST"))conn.setDoOutput(true);
         if(!requestType.equals("GET")) serverRequestBodyHandler.handleServerRequestBody(conn,request);
         if(requestType.equals("POST"))conn.connect();
+
         return readResponse(conn,request,requestType);
     }
 
-    public void request(String url, String requestType) throws Exception{
-        String reqResponse = Request(url, requestType);
+    public void request(String url, String requestType) {
+        try {
+            String reqResponse = Request(url, requestType);
 
-        if(reqResponse.startsWith("{\"error\"")){
-            System.out.println("starts with error : " + reqResponse);
-            serverResponseHandler.HandleServerErrors(reqResponse,url,requestType,400);
+            if (reqResponse.startsWith("{\"error\"")) {
+                System.out.println("starts with error : " + reqResponse);
+                serverResponseHandler.HandleServerErrors(reqResponse, url, requestType, 400);
+            }
+            else clientInfo = serverResponseHandler.HandleServerResponse(reqResponse, url);
+        }catch (Exception e){
+            System.out.println("Error in new request : " + e.getMessage());
         }
-        else{
-            serverResponseHandler.HandleServerResponse(reqResponse, url);
-        }
-
         //setResponse(reqResponse);
     }
 
@@ -70,6 +79,6 @@ public class ServerRequest {
     }
 
     private void addHeaders(HttpURLConnection conn,String request,String requestType){
-
+        baseRequest.additionalHeaders(conn,request,requestType,identification);
     }
 }

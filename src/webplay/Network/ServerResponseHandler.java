@@ -13,6 +13,7 @@ import webplay.ResponseClasses.Quests.StartRootObject;
 import webplay.ResponseClasses.Quests.StartSign;
 import webplay.ResponseClasses.Quests.Supporters.SupportersRootObject;
 import webplay.ResponseClasses.UserAreas.UserAreasRootObject;
+import webplay.Security.CustomLogger;
 import webplay.Security.Decryptor;
 
 public class ServerResponseHandler {
@@ -32,10 +33,12 @@ public class ServerResponseHandler {
         decryptor = new Decryptor();
     }
 
-    public void HandleServerResponse(String serverResponse,String serverResponseUrl) throws Exception{
+    public ClientInfo HandleServerResponse(String serverResponse,String serverResponseUrl) throws Exception{
         String[] urlParts = serverResponseUrl.split("/");
+        obj = JSONValue.parse(serverResponse);
+        jsonObject = (JSONObject) obj;
 
-        switch(urlParts[0]){
+        switch(urlParts[1]){
             case "auth": {
                 switch(urlParts[1]){
                     case "sign_in":{
@@ -60,8 +63,7 @@ public class ServerResponseHandler {
             } break;
             case "user":{
                 UserInfo userInfo = new UserInfo();
-                User user = objectMapper.readValue(serverResponse,User.class);
-                userInfo.setUser(user);
+                userInfo = objectMapper.readValue(String.valueOf(jsonObject),UserInfo.class);
                 clientInfo.setUserInfo(userInfo);
             } break;
             case "areas":{
@@ -80,9 +82,9 @@ public class ServerResponseHandler {
                 GashasRootObject gashasRootObject = objectMapper.readValue(serverResponse,GashasRootObject.class);
                 clientInfo.setGashasRootObject(gashasRootObject);
             } break;
-            default : return;
+            default : break;
         }
-        //return clientInfo
+        return clientInfo;
     }
 
     public void HandleServerErrors(String errorCode,String request,String requestType,int responseCode){

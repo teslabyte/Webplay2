@@ -506,7 +506,6 @@ public class Connect{
 					};break;
 					case "/sign_in":{                					//NEW MAPPING IS IN TESTING HERE
 						authSignIn = objectMapper.readValue(String.valueOf(jsonObject),AuthSignIn.class);
-						System.out.println(authSignIn.getAlgorithm());
 						baseRequest.setAccessTokken(String.valueOf(jsonObject.get("access_token")));            
 					    baseRequest.setSecret(String.valueOf(jsonObject.get("secret")));
 					    transferedAccTs = System.currentTimeMillis()/1000;

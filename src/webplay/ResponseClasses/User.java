@@ -1,36 +1,36 @@
 package webplay.ResponseClasses;
 
 public class User {
-    private float id;
+    private long id;
     private String name;
     private boolean is_ondemand;
-    private float rank;
-    private float exp;
-    private float act;
-    private float boost_point;
-    private float act_max;
-    private float act_at;
-    private float boost_at;
-    private float wallpaper_item_id;
-    private float card_capacity;
-    private float total_card_capacity;
-    private float team_cost_capacity;
-    private float friends_capacity;
-    private float support_item_capacity;
+    private long rank;
+    private long exp;
+    private long act;
+    private long boost_point;
+    private long act_max;
+    private long act_at;
+    private long boost_at;
+    private long wallpaper_item_id;
+    private long card_capacity;
+    private long total_card_capacity;
+    private long team_cost_capacity;
+    private long friends_capacity;
+    private long support_item_capacity;
     private boolean is_support_item_capacity_extended;
-    private float zeni;
-    private float gasha_point;
-    private float exchange_point;
-    private float stone;
+    private long zeni;
+    private long gasha_point;
+    private long exchange_point;
+    private long stone;
     private boolean is_linked_facebook;
     Tutorial TutorialObject;
     private boolean is_potential_releaseable;
-    private float processed_at;
+    private long processed_at;
 
 
     // Getter Methods
 
-    public float getId() {
+    public long getId() {
         return id;
     }
 
@@ -42,55 +42,55 @@ public class User {
         return is_ondemand;
     }
 
-    public float getRank() {
+    public long getRank() {
         return rank;
     }
 
-    public float getExp() {
+    public long getExp() {
         return exp;
     }
 
-    public float getAct() {
+    public long getAct() {
         return act;
     }
 
-    public float getBoost_point() {
+    public long getBoost_point() {
         return boost_point;
     }
 
-    public float getAct_max() {
+    public long getAct_max() {
         return act_max;
     }
 
-    public float getAct_at() {
+    public long getAct_at() {
         return act_at;
     }
 
-    public float getBoost_at() {
+    public long getBoost_at() {
         return boost_at;
     }
 
-    public float getWallpaper_item_id() {
+    public long getWallpaper_item_id() {
         return wallpaper_item_id;
     }
 
-    public float getCard_capacity() {
+    public long getCard_capacity() {
         return card_capacity;
     }
 
-    public float getTotal_card_capacity() {
+    public long getTotal_card_capacity() {
         return total_card_capacity;
     }
 
-    public float getTeam_cost_capacity() {
+    public long getTeam_cost_capacity() {
         return team_cost_capacity;
     }
 
-    public float getFriends_capacity() {
+    public long getFriends_capacity() {
         return friends_capacity;
     }
 
-    public float getSupport_item_capacity() {
+    public long getSupport_item_capacity() {
         return support_item_capacity;
     }
 
@@ -98,19 +98,19 @@ public class User {
         return is_support_item_capacity_extended;
     }
 
-    public float getZeni() {
+    public long getZeni() {
         return zeni;
     }
 
-    public float getGasha_point() {
+    public long getGasha_point() {
         return gasha_point;
     }
 
-    public float getExchange_point() {
+    public long getExchange_point() {
         return exchange_point;
     }
 
-    public float getStone() {
+    public long getStone() {
         return stone;
     }
 
@@ -126,13 +126,13 @@ public class User {
         return is_potential_releaseable;
     }
 
-    public float getProcessed_at() {
+    public long getProcessed_at() {
         return processed_at;
     }
 
     // Setter Methods
 
-    public void setId(float id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -144,55 +144,55 @@ public class User {
         this.is_ondemand = is_ondemand;
     }
 
-    public void setRank(float rank) {
+    public void setRank(long rank) {
         this.rank = rank;
     }
 
-    public void setExp(float exp) {
+    public void setExp(long exp) {
         this.exp = exp;
     }
 
-    public void setAct(float act) {
+    public void setAct(long act) {
         this.act = act;
     }
 
-    public void setBoost_point(float boost_point) {
+    public void setBoost_point(long boost_point) {
         this.boost_point = boost_point;
     }
 
-    public void setAct_max(float act_max) {
+    public void setAct_max(long act_max) {
         this.act_max = act_max;
     }
 
-    public void setAct_at(float act_at) {
+    public void setAct_at(long act_at) {
         this.act_at = act_at;
     }
 
-    public void setBoost_at(float boost_at) {
+    public void setBoost_at(long boost_at) {
         this.boost_at = boost_at;
     }
 
-    public void setWallpaper_item_id(float wallpaper_item_id) {
+    public void setWallpaper_item_id(long wallpaper_item_id) {
         this.wallpaper_item_id = wallpaper_item_id;
     }
 
-    public void setCard_capacity(float card_capacity) {
+    public void setCard_capacity(long card_capacity) {
         this.card_capacity = card_capacity;
     }
 
-    public void setTotal_card_capacity(float total_card_capacity) {
+    public void setTotal_card_capacity(long total_card_capacity) {
         this.total_card_capacity = total_card_capacity;
     }
 
-    public void setTeam_cost_capacity(float team_cost_capacity) {
+    public void setTeam_cost_capacity(long team_cost_capacity) {
         this.team_cost_capacity = team_cost_capacity;
     }
 
-    public void setFriends_capacity(float friends_capacity) {
+    public void setFriends_capacity(long friends_capacity) {
         this.friends_capacity = friends_capacity;
     }
 
-    public void setSupport_item_capacity(float support_item_capacity) {
+    public void setSupport_item_capacity(long support_item_capacity) {
         this.support_item_capacity = support_item_capacity;
     }
 
@@ -200,19 +200,19 @@ public class User {
         this.is_support_item_capacity_extended = is_support_item_capacity_extended;
     }
 
-    public void setZeni(float zeni) {
+    public void setZeni(long zeni) {
         this.zeni = zeni;
     }
 
-    public void setGasha_point(float gasha_point) {
+    public void setGasha_point(long gasha_point) {
         this.gasha_point = gasha_point;
     }
 
-    public void setExchange_point(float exchange_point) {
+    public void setExchange_point(long exchange_point) {
         this.exchange_point = exchange_point;
     }
 
-    public void setStone(float stone) {
+    public void setStone(long stone) {
         this.stone = stone;
     }
 
@@ -228,7 +228,7 @@ public class User {
         this.is_potential_releaseable = is_potential_releaseable;
     }
 
-    public void setProcessed_at(float processed_at) {
+    public void setProcessed_at(long processed_at) {
         this.processed_at = processed_at;
     }
 }

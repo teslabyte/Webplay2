@@ -126,7 +126,13 @@ public class WebAPI {
                 case "ping":connection.request("/ping","GET");break;
                 case "signin":connection.request("/auth/sign_in","POST");break;
                 case "signup":connection.request("/auth/sign_up","POST");break;
-                case "user":connection.request("/user","GET");break;
+                case "user":{
+                    //connection.request("/user","GET");
+                    ServerRequest serverRequest = new ServerRequest();
+                    serverRequest.baseRequest = connection.baseRequest;
+                    CommandHandler commandHandler = new CommandHandler();
+                    connection.responseMessage = commandHandler.handleCommands("user",serverRequest);
+                }break;
                 case "gifts":connection.request("/gifts","GET");break;
                 case "accept":connection.request("/gifts/accept","POST");break;
                 case "apologies":connection.request("/apologies/accept","PUT");break;

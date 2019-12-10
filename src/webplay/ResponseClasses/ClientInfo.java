@@ -4,6 +4,7 @@ import webplay.ResponseClasses.Cards.CardsRootObject;
 import webplay.ResponseClasses.Gashas.GashasRootObject;
 import webplay.ResponseClasses.Missions.MissionsRootObject;
 import webplay.ResponseClasses.UserAreas.UserAreasRootObject;
+import webplay.Security.CustomLogger;
 
 public class ClientInfo {
     private AuthSignIn authSignIn;
@@ -69,4 +70,5 @@ public class ClientInfo {
     public void setGashasRootObject(GashasRootObject gashasRootObject) {
         this.gashasRootObject = gashasRootObject;
     }
+
 }
